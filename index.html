@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hao Vo</title>
+  <meta
+    name="description"
+    content="Hao Vo — CS Master's researcher working on 4D scene understanding, spatial intelligence, autonomous driving and robotics."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Decorative background -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">
+        <span class="nav__dot"></span>
+        Hao&nbsp;Vo
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="assets/haov_cv.pdf" class="nav__cv" target="_blank" rel="noopener">CV</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <canvas class="hero__scene" id="scene" aria-hidden="true"></canvas>
+      <div class="hero__content reveal">
+        <!-- <p class="hero__eyebrow">Computer Vision · Spatial Intelligence</p> -->
+        <h1 class="hero__title">
+          I explore machines in
+          <span class="grad">space and time.</span>
+        </h1>
+        <!-- <p class="hero__lede">
+          I'm a Master's student focused on
+          <strong>4D scene understanding</strong> - lifting model intelligence from the
+          image plane into space and time to power applications in
+          <strong>autonomous driving</strong> and <strong>robotics</strong>.
+        </p> -->
+        <div class="hero__actions">
+          <a href="#publications" class="btn btn--primary">View Publications</a>
+          <a href="#about" class="btn btn--ghost">About me</a>
+        </div>
+        <!-- <ul class="hero__meta">
+          <li><span class="dotk"></span>University of Arkansas</li>
+          <li><span class="dotk"></span>Advised by Dr. Ngan Le</li>
+          <li><span class="dotk"></span>CVPR · NeurIPS · TMLR</li>
+        </ul> -->
+      </div>
+
+      <div class="hero__avatar reveal">
+        <div class="avatar-ring">
+          <img src="assets/hao_vo.jpg" alt="Portrait of Hao Vo" />
+        </div>
+        <!-- <div class="avatar-badge">
+          <span class="avatar-badge__pulse"></span>
+          Coding now
+        </div> -->
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="section__head reveal">
+        <!-- <span class="section__index">01</span> -->
+        <h2 class="section__title">About</h2>
+      </div>
+
+      <div class="about reveal">
+        <p>
+          Hello, I'm Hao (Hank), MSc student at UofA, advised by
+          <a href="https://scholar.google.com/citations?user=8ck0k_UAAAAJ&hl=en" target="_blank" rel="noopener">Dr. Ngan Le</a>.
+          I work on <strong>4D scene understanding</strong>, where I'm interested in
+          bringing geometric and temporal structure into models that learn from
+          multi-view images and video, moving perception off the image plane and
+          into space and time, with an eye toward robotics and autonomous driving. 
+          <br><br>
+          Looking ahead, I'd like to explore how to make machines reason over long horizons across
+          both virtual and physical domains, moving past task-specific solutions
+          toward autonomy that is general-purpose and genuinely reliable.
+        </p>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="section" id="publications">
+      <div class="section__head reveal">
+        <!-- <span class="section__index">02</span> -->
+        <h2 class="section__title">Selected Publications</h2>
+      </div>
+
+      <div class="pubs">
+        <!-- 1 -->
+        <article class="pub reveal">
+          <a class="pub__thumb" href="#" aria-label="SemLT3D thumbnail">
+            <img src="assets/thumbnails/semlt3d.png" alt="SemLT3D thumbnail placeholder" />
+          </a>
+          <div class="pub__body">
+            <div class="pub__tags">
+              <span class="tag tag--accent">CVPR 2026</span>
+            </div>
+            <h3 class="pub__title">
+              SemLT3D: Semantic-Guided Expert Distillation for Camera-only Long-Tailed 3D Object Detection
+            </h3>
+            <p class="pub__authors"><strong>Hao Vo</strong>, Khoa Vo, Thinh Phan, Ngo Xuan Cuong, Gianfranco Doretto, Hien Nguyen, Anh Nguyen, Ngan Le</p>
+            <p class="pub__venue">
+              IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+            </p>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="pub reveal">
+          <a class="pub__thumb" href="#" aria-label="DRIVESPATIAL thumbnail">
+            <img src="assets/thumbnails/drivespatial.png" alt="DRIVESPATIAL thumbnail placeholder" />
+          </a>
+          <div class="pub__body">
+            <div class="pub__tags">
+              <span class="tag tag--review">Under Review 2026</span>
+            </div>
+            <h3 class="pub__title">
+              DRIVESPATIAL: A Benchmark for Spatiotemporal Intelligence in VLMs for Autonomous Driving
+            </h3>
+            <p class="pub__authors"><strong>Hao Vo</strong>, Khoa Vo, Phu Loc Nguyen, Sieu Tran, Duc Minh Nguyen, Ngo Xuan Cuong, Gladys Gawugah, Sreevenkata Anjani Tishita Godavarthi, Chase Rainwater, Nghi D. Q. Bui, Anh Nguyen, Duy Minh Ho Nguyen, Ngan Le</p>
+            <p class="pub__venue">Under Review</p>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="pub reveal">
+          <a class="pub__thumb" href="#" aria-label="Helmet detection thumbnail">
+            <img src="assets/thumbnails/cvprw.png" alt="Helmet detection thumbnail placeholder" />
+          </a>
+          <div class="pub__body">
+            <div class="pub__tags">
+              <span class="tag tag--accent">CVPRW 2024</span>
+            </div>
+            <h3 class="pub__title">
+              Robust Motorcycle Helmet Detection in Real-World Scenarios: Using Co-DETR and Minority Class Enhancement
+            </h3>
+            <p class="pub__authors"><strong>Hao Vo</strong>, Sieu Tran, Duc Minh Nguyen, Thua Nguyen, Tien Do, Duy-Dinh Le, Thanh Duc Ngo</p>
+            <p class="pub__venue">
+              IEEE/CVF CVPR Workshops (CVPRW)
+            </p>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="pub reveal">
+          <a class="pub__thumb" href="#" aria-label="MVDGC thumbnail">
+            <img src="assets/thumbnails/mvcyde.png" alt="MVDGC thumbnail placeholder" />
+          </a>
+          <div class="pub__body">
+            <div class="pub__tags">
+              <span class="tag tag--accent">TMLR 2026</span>
+            </div>
+            <h3 class="pub__title">
+              MVDGC: Joint 3D and 2D Multi-view Pedestrian Detection via Dual Geometric Constraints
+            </h3>
+            <p class="pub__authors">Thinh Phan, <strong>Hao Vo</strong>, Khoa Vo, Cuong Pham, Thanh Duc Ngo, Ngan Le </p>
+            <p class="pub__venue">
+              Transactions on Machine Learning Research (TMLR)
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section class="section" id="awards">
+      <div class="section__head reveal">
+        <!-- <span class="section__index">03</span> -->
+        <h2 class="section__title">Awards</h2>
+      </div>
+
+      <ol class="awards">
+        <li class="award reveal">
+          <span class="award__year">2024</span>
+          <div class="award__body">
+            <h3>First Prize · AI City Challenge (Track 5)</h3>
+            <p>NVIDIA</p>
+            <p class="award__desc">Built detection models that stay reliable under extreme conditions, including long-tailed classes, fog, edge cases, and distribution shift.</p>
+          </div>
+          <span class="award__medal">🥇</span>
+        </li>
+
+        <li class="award reveal">
+          <span class="award__year">2022</span>
+          <div class="award__body">
+            <h3>First Prize</h3>
+            <p>Vietnam HCM AI Challenge</p>
+            <p class="award__desc">Built an interactive multi-modal video retrieval system that searches terabyte-scale data in under a second.</p>
+          </div>
+          <span class="award__medal">🥇</span>
+        </li>
+
+        <li class="award reveal">
+          <span class="award__year">2025</span>
+          <div class="award__body">
+            <h3>Second Prize</h3>
+            <p>Vietnam Ministerial-level Scientific Research</p>
+          </div>
+          <span class="award__medal">🥈</span>
+        </li>
+
+
+        <li class="award reveal">
+          <span class="award__year">2023</span>
+          <div class="award__body">
+            <h3>Second Prize</h3>
+            <p>FPT Vietnam AI Challenge</p>
+            <p class="award__desc">Pitched a lost-and-found system combining retrieval with a RAG model, developed as a startup concept with a working proof of concept.</p>
+          </div>
+          <span class="award__medal">🥈</span>
+        </li>
+    
+        <li class="award reveal">
+          <span class="award__year">2021</span>
+          <div class="award__body">
+            <h3>Third Prize</h3>
+            <p>BKAI - Naver Challenge</p>
+            <p class="award__desc">Scene text recognition (OCR) under varied real-world conditions.</p>
+          </div>
+          <!-- third pi -->
+          <span class="award__medal">🥉</span>
+        </li>
+
+        <li class="award reveal">
+          <span class="award__year">2024</span>
+          <div class="award__body">
+            <h3>Finalist</h3>
+            <p>Zalo AI Challenge</p>
+            <p class="award__desc">Personalized generative model that produces advertisements from text descriptions.</p>
+          </div>
+          <!-- <span class="award__medal">🥈</span> -->
+        </li>
+
+      </ol>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner reveal">
+      <!-- <h2 class="footer__title">Open to research collaborations and conversations.</h2> -->
+      <p class="footer__sub">Open to research collaborations and conversations.</p>
+      <div class="footer__links">
+        <a href="mailto:voanhhao3830@gmail.com" class="btn btn--primary">voanhhao3830@gmail.com</a>
+        <a href="https://www.linkedin.com/in/haovo0602/" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=VVxHHgwAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" class="btn btn--ghost">Google Scholar</a>
+      </div>
+      <!-- <p class="footer__copy">© <span id="year"></span> Hao Vo · Fayetteville, AR</p> -->
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
