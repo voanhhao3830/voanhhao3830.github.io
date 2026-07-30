@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hao Vo</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='52'>🌾🌱</text></svg>" />
   <meta
     name="description"
     content="Hao Vo — CS Master's researcher working on 4D scene understanding, spatial intelligence, autonomous driving and robotics."
@@ -25,7 +26,7 @@
   <header class="nav" id="nav">
     <div class="nav__inner">
       <a href="#top" class="nav__brand">
-        <span class="nav__dot"></span>
+        <span class="nav__logo" aria-hidden="true">🌾</span>
         Hao&nbsp;Vo
       </a>
       <nav class="nav__links" aria-label="Primary">
@@ -57,7 +58,7 @@
           <strong>autonomous driving</strong> and <strong>robotics</strong>.
         </p> -->
         <div class="hero__actions">
-          <a href="#publications" class="btn btn--primary">View Publications</a>
+          <a href="https://scholar.google.com/citations?user=VVxHHgwAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" class="btn btn--primary">View Publications</a>
           <a href="#about" class="btn btn--ghost">About me</a>
         </div>
         <!-- <ul class="hero__meta">
@@ -86,18 +87,69 @@
       </div>
 
       <div class="about reveal">
-        <p>
-          Hello, I'm Hao (Hank), MSc student at UofA, advised by
-          <a href="https://scholar.google.com/citations?user=8ck0k_UAAAAJ&hl=en" target="_blank" rel="noopener">Dr. Ngan Le</a>.
-          I work on <strong>4D scene understanding</strong>, where I'm interested in
-          bringing geometric and temporal structure into models that learn from
-          multi-view images and video, moving perception off the image plane and
-          into space and time, with an eye toward robotics and autonomous driving. 
-          <br><br>
-          Looking ahead, I'd like to explore how to make machines reason over long horizons across
-          both virtual and physical domains, moving past task-specific solutions
-          toward autonomy that is general-purpose and genuinely reliable.
-        </p>
+        <div class="about__text">
+          <p>
+            Hello, I'm Hao (Hank), MSc student at UofA, advised by
+            <a href="https://scholar.google.com/citations?user=8ck0k_UAAAAJ&hl=en" target="_blank" rel="noopener">Dr. Ngan Le</a>.
+            I work on <strong>4D scene understanding</strong>, where I'm interested in
+            bringing geometric and temporal structure into models that learn from
+            multi-view images and video, moving perception off the image plane and
+            into space and time, with an eye toward robotics and autonomous driving. 
+            <br><br>
+            Looking ahead, I want to explore how to give machines a grounded understanding of the 
+            physical world and enable them to work together, advancing from task-specific systems 
+            toward general-purpose, collaborative autonomy.
+            <!-- Looking ahead, I'd like to explore how to make machines reason over long horizons across -->
+            <!-- both virtual and physical domains, moving past task-specific solutions -->
+            <!-- toward autonomy that is general-purpose and genuinely reliable. -->
+          </p>
+        </div>
+
+        <aside class="news" aria-label="News">
+          <h3 class="news__title">News</h3>
+          <ul class="news__list">
+            <li class="news__item">
+              <span class="news__date">July 2026</span>
+              <span class="news__icon" aria-hidden="true">🌱</span>
+              <p class="news__text">Found someone wonderful</p>
+            </li>
+            <li class="news__item">
+              <span class="news__date">Jul 2026</span>
+              <span class="news__icon" aria-hidden="true">🎉</span>
+              <p class="news__text">One paper accepted to <strong>ACM MM 2026</strong>.</p>
+            </li>
+            <li class="news__item">
+              <span class="news__date">May 2026</span>
+              <span class="news__icon" aria-hidden="true">🎉</span>
+              <p class="news__text">One paper accepted to <strong>TMLR 2026</strong>.</p>
+            </li>
+            <li class="news__item">
+              <span class="news__date">Feb 2026</span>
+              <span class="news__icon" aria-hidden="true">🎉</span>
+              <p class="news__text">One paper accepted to <strong>CVPR 2026</strong>.</p>
+            </li>
+            <li class="news__item">
+              <span class="news__date">May 2025</span>
+              <span class="news__icon" aria-hidden="true">✈️</span>
+              <p class="news__text">Started my <strong>MSc @ UARK</strong>.</p>
+            </li>
+            <li class="news__item">
+              <span class="news__date">Dec 2024</span>
+              <span class="news__icon" aria-hidden="true">🎓</span>
+              <p class="news__text">Earned my <strong>BS @ VNUHCM-UIT</strong>.</p>
+            </li>
+            <li class="news__item">
+              <span class="news__date">Apr 2024</span>
+              <span class="news__icon" aria-hidden="true">🎉</span>
+              <p class="news__text">One paper accepted to <strong>CVPRW 2024</strong>.</p>
+            </li>
+            <li class="news__item">
+              <span class="news__date">Sep 2023</span>
+              <span class="news__icon" aria-hidden="true">💼</span>
+              <p class="news__text">Started working at <strong>viAct</strong>.</p>
+            </li>
+          </ul>
+        </aside>
       </div>
     </section>
 
@@ -125,6 +177,12 @@
             <p class="pub__venue">
               IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
             </p>
+            <div class="pub__links">
+              <a class="pub__btn" href="https://openaccess.thecvf.com/content/CVPR2026/papers/Vo_SemLT3D_Semantic-Guided_Expert_Distillation_for_Camera-only_Long-Tailed_3D_Object_Detection_CVPR_2026_paper.pdf" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/><path d="M9 13h6M9 17h6"/></svg>
+                Paper
+              </a>
+            </div>
           </div>
         </article>
 
@@ -142,6 +200,12 @@
             </h3>
             <p class="pub__authors"><strong>Hao Vo</strong>, Khoa Vo, Phu Loc Nguyen, Sieu Tran, Duc Minh Nguyen, Ngo Xuan Cuong, Gladys Gawugah, Sreevenkata Anjani Tishita Godavarthi, Chase Rainwater, Nghi D. Q. Bui, Anh Nguyen, Duy Minh Ho Nguyen, Ngan Le</p>
             <p class="pub__venue">Under Review</p>
+            <div class="pub__links">
+              <a class="pub__btn" href="https://arxiv.org/pdf/2605.23176" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/><path d="M9 13h6M9 17h6"/></svg>
+                Paper
+              </a>
+            </div>
           </div>
         </article>
 
@@ -161,6 +225,16 @@
             <p class="pub__venue">
               IEEE/CVF CVPR Workshops (CVPRW)
             </p>
+            <div class="pub__links">
+              <a class="pub__btn" href="https://openaccess.thecvf.com/content/CVPR2024W/AICity/papers/Vo_Robust_Motorcycle_Helmet_Detection_in_Real-World_Scenarios_Using_Co-DETR_and_CVPRW_2024_paper.pdf" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/><path d="M9 13h6M9 17h6"/></svg>
+                Paper
+              </a>
+              <a class="pub__btn" href="https://github.com/aiclub-uit/AICITY2024_Track5" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.12-.31-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.18.77.84 1.24 1.91 1.24 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 22.29 24 17.79 24 12.5 24 5.87 18.63.5 12 .5z"/></svg>
+                Code
+              </a>
+            </div>
           </div>
         </article>
 
@@ -180,6 +254,16 @@
             <p class="pub__venue">
               Transactions on Machine Learning Research (TMLR)
             </p>
+            <div class="pub__links">
+              <a class="pub__btn" href="https://arxiv.org/abs/2607.00273" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/><path d="M9 13h6M9 17h6"/></svg>
+                Paper
+              </a>
+              <a class="pub__btn" href="https://github.com/UARK-AICV/MVDGC" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.12-.31-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.18.77.84 1.24 1.91 1.24 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 22.29 24 17.79 24 12.5 24 5.87 18.63.5 12 .5z"/></svg>
+                Code
+              </a>
+            </div>
           </div>
         </article>
       </div>
