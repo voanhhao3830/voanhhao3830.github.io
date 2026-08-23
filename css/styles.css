@@ -233,6 +233,17 @@ img { max-width: 100%; display: block; }
   transform: translateY(-2px);
 }
 
+.btn--icon {
+  gap: 8px;
+  padding: 11px 20px;
+}
+
+.btn--icon svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
