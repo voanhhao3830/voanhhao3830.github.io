@@ -295,6 +295,11 @@ img { max-width: 100%; display: block; }
   color: transparent;
 }
 
+.highlight {
+  font-weight: 700;
+  color: var(--blue-700);
+}
+
 .hero__lede {
   font-size: 1.12rem;
   color: var(--ink-soft);
