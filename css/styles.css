@@ -656,6 +656,20 @@ img { max-width: 100%; display: block; }
   transform: translateY(-1px);
 }
 
+.pub__btn--soon {
+  color: var(--muted);
+  background: var(--paper);
+  border-style: dashed;
+  cursor: default;
+}
+
+.pub__btn--soon:hover {
+  background: var(--paper);
+  color: var(--muted);
+  border-color: #d4d4d8;
+  transform: none;
+}
+
 /* ---------- Awards ---------- */
 .awards {
   list-style: none;
