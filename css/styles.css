@@ -136,23 +136,68 @@ img { max-width: 100%; display: block; }
   justify-content: space-between;
 }
 
+/* Brand: 3D flip card — 🌾 Hao Vo  <->  🌱 Thanh Tam */
 .nav__brand {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
+  display: inline-block;
+  perspective: 700px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav__brand-flip {
+  display: grid;
+  transform-style: preserve-3d;
+  transition: transform .8s cubic-bezier(.45, .05, .3, 1);
+  will-change: transform;
+}
+
+.nav__brand:hover .nav__brand-flip,
+.nav__brand:focus-visible .nav__brand-flip {
+  transform: rotateY(180deg);
+}
+
+/* Both faces share one grid cell, so the pill sizes to the wider name */
+.nav__face {
+  grid-area: 1 / 1;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  white-space: nowrap;
   gap: 8px;
   padding: 6px 14px 6px 10px;
   border-radius: 999px;
   background: var(--blue-50);
   border: 1px solid var(--blue-100);
   box-shadow: 0 0 0 3px rgba(37, 99, 235, .06);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.nav__face--back {
+  transform: rotateY(180deg);
+  color: var(--blue-700);
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, .07);
+}
+
+/* Click: spin an extra full turn, then navigate.
+   540deg lands on the back face from either resting state (0 or 180). */
+.nav__brand.is-spinning .nav__brand-flip {
+  transform: rotateY(540deg);
+  transition-duration: .95s;
 }
 
 .nav__logo {
   font-size: 1.15rem;
   line-height: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav__brand-flip,
+  .nav__brand.is-spinning .nav__brand-flip { transition: none; }
 }
 
 .nav__links {

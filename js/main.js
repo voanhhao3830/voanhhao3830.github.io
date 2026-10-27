@@ -404,3 +404,50 @@
   }
 })();
 
+
+/* ---------------------------------------------------------
+   Brand flip: spin once on click, then redirect
+   --------------------------------------------------------- */
+(function () {
+  var brand = document.getElementById("navBrand");
+  if (!brand) return;
+
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var leaving = false;
+
+  brand.addEventListener("click", function (e) {
+    // Let modified clicks (new tab / new window) behave normally
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+    e.preventDefault();
+    if (leaving) return;
+    leaving = true;
+
+    var go = function () { window.location.href = brand.href; };
+
+    if (reduce) { go(); return; }
+
+    brand.classList.add("is-spinning");
+    var done = false;
+    var finish = function () {
+      if (done) return;
+      done = true;
+      go();
+    };
+    brand.addEventListener("transitionend", finish, { once: true });
+    setTimeout(finish, 1150); // fallback if transitionend never fires
+  });
+
+  // Coming back via the browser's Back button restores this page from the
+  // bfcache with .is-spinning still applied, which would leave the brand stuck
+  // on the "Thanh Tam" face. Snap it back to "Hao Vo" without replaying the
+  // spin in reverse.
+  window.addEventListener("pageshow", function () {
+    leaving = false;
+    if (!brand.classList.contains("is-spinning")) return;
+    var flip = brand.querySelector(".nav__brand-flip");
+    flip.style.transition = "none";
+    brand.classList.remove("is-spinning");
+    void flip.offsetWidth; // flush the no-transition state before restoring
+    flip.style.transition = "";
+  });
+})();
