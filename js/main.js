@@ -23,22 +23,6 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
-  // Mobile menu toggle
-  var toggle = document.getElementById("navToggle");
-  var links = document.querySelector(".nav__links");
-  if (toggle && links) {
-    toggle.addEventListener("click", function () {
-      var open = links.classList.toggle("is-open");
-      toggle.setAttribute("aria-expanded", String(open));
-    });
-    links.querySelectorAll("a").forEach(function (a) {
-      a.addEventListener("click", function () {
-        links.classList.remove("is-open");
-        toggle.setAttribute("aria-expanded", "false");
-      });
-    });
-  }
-
   // Scroll-reveal with stagger
   var reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
