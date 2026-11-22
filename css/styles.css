@@ -533,14 +533,16 @@ img { max-width: 100%; display: block; }
   border: 1px solid var(--line);
 }
 
-.pub__thumb img {
+.pub__thumb img,
+.pub__thumb video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform .4s var(--ease);
 }
 
-.pub:hover .pub__thumb img { transform: scale(1.05); }
+.pub:hover .pub__thumb img,
+.pub:hover .pub__thumb video { transform: scale(1.05); }
 
 .pub__tags {
   display: flex;
