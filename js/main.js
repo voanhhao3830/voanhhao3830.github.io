@@ -14,15 +14,6 @@
   } else {
     timeOfDayText = "evening";
   }
-  // Sticky nav shadow on scroll
-  var nav = document.getElementById("nav");
-  var onScroll = function () {
-    if (!nav) return;
-    nav.classList.toggle("is-scrolled", window.scrollY > 8);
-  };
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
-
   // Scroll-reveal with stagger
   var reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
